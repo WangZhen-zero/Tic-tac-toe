@@ -1,0 +1,40 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 背景渐变圆形 -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#6A1B9A"
+            android:centerColor="#FFD700"
+            android:endColor="#2196F3"
+            android:angle="135"
+            android:type="radial"
+            android:gradientRadius="70%" />
+        </shape>
+    </item>
+
+    <!-- 发光效果 -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#FFFFFF"
+            android:endColor="#00FFFFFF"
+            android:gradientRadius="90%"
+            android:type="radial" />
+        </shape>
+    </item>
+
+    <!-- 棋盘图案 -->
+    <item>
+        <bitmap
+            android:src="@drawable/chess_pattern"
+        android:gravity="center" />
+    </item>
+
+    <!-- 中心标题文字 -->
+    <item>
+        <bitmap
+            android:src="@drawable/logo_text"
+        android:gravity="center" />
+    </item>
+</layer-list>

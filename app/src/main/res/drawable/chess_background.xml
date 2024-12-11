@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- enchanted_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#303F9F"/> <!-- 背景主色调 -->
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/game_bg1"
+        android:tileMode="repeat"/>
+    </item>
+</layer-list>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- mystical_button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+                android:startColor="#FFD700"
+                android:endColor="#FFA500"
+                android:angle="45"/>
+            <corners android:radius="10dp"/>
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#ADFF2F"
+                android:endColor="#7FFF00"
+                android:angle="45"/>
+            <corners android:radius="10dp"/>
+            <stroke
+                android:width="2dp"
+                android:color="#8A2BE2"/>
+            <padding
+                android:left="5dp"
+                android:top="5dp"
+                android:right="5dp"
+                android:bottom="5dp"/>
+        </shape>
+    </item>
+</selector>

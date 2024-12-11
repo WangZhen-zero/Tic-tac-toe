@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景圆 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#CCCCCC" />
+        </shape>
+    </item>
+    <!-- 中间图标 -->
+    <item>
+        <bitmap
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:gravity="center" />
+    </item>
+</layer-list>

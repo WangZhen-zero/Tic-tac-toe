@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/game_bg2">
+
+    <!-- 提示文本-->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玩家 艾莉娅 的回合 (X)"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 玩家得分统计文本 -->
+    <LinearLayout
+        android:id="@+id/score_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#F0F0F0">
+
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="艾丽娅得分：0 "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="卡奥斯得分：0 "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- 棋盘布局 -->
+<!--    <include layout="@layout/board_layout" />-->
+
+    <!-- 棋盘容器 -->
+    <GridLayout
+        android:id="@+id/board_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/button_00"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/button_01"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button android:id="@+id/button_02"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button android:id="@+id/button_10"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button android:id="@+id/button_11"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/button_12"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/button_20"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/button_21"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/button_22"
+            style="@style/GameButton"
+            android:background="@drawable/button_background" />
+    </GridLayout>
+
+    <!-- 水平布局容器，用于放置三个按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- 重置按钮 -->
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置游戏"
+            android:backgroundTint="#64B5F6"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 重置分数按钮 -->
+        <Button
+            android:id="@+id/reset_score_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置分数"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 返回标题按钮 -->
+        <Button
+            android:id="@+id/back_to_title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回标题"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mode_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换到玩家对战"
+        android:layout_gravity="center"
+        android:backgroundTint="#101738"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="player1_color">#B31445</color> <!-- 玩家1颜色 -->
+    <color name="player2_color">#03A9F4</color> <!-- 玩家2颜色 -->
+    <color name="default_button_color">#FFFFFF</color> <!-- 按钮默认颜色 -->
+    <color name="button_border_color">#BDBDBD</color> <!-- 按钮边框颜色 -->
+    <color name="default_board_color">#80000000</color> <!-- 默认棋盘透明背景 -->
+    <color name="comment_text_color">#FF5722</color> <!-- 评论文本颜色 -->
+</resources>
