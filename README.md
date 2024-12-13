@@ -51,7 +51,7 @@
 ### 安装步骤
 1. 克隆项目到本地：
    ```bash
-   git clone https://github.com/WangZhen-zero/jingziqi.git
+   git clone https://github.com/WangZhen-zero/Tic-tac-toe
    ```
 
 2. 使用 Android Studio 打开项目。
@@ -66,7 +66,7 @@
 
 
 ### 报告问题
-如果发现任何问题，请通过 [Issues](https://github.com/WangZhen-zero/jingziqi/issues) 页面提交问题。
+如果发现任何问题，请通过 [Issues](https://github.com/WangZhen-zero/Tic-tac-toe/issues) 页面提交问题。
 
 ## 许可证
 该项目基于 [MIT License](LICENSE) 开源。
